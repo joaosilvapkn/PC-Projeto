@@ -6,9 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
         try {
-            //Socket socket = new Socket("172.29.208.1",1);         // UNI EDUARDO
-            Socket socket = new Socket("192.168.1.80", 1); // CASA EDUARDO
-
+            Socket socket = new Socket("172.29.208.1",1);         // universidade do minho
+            
             TCP tcp = new TCP(socket);
             ArrayList<Player> planetas = new ArrayList<>(6);
             for (int i = 0; i < 6; i++) {
